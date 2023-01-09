@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <center><h2 style="color: black;">Simple Student Form</h2></center>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onformsubmit();" autocomplete="off">
+                    <h3 style="color: black;">Student form</h3>
+                    <div>
+                        <label>Full Name</label>
+                        <input type="text" name="username" id="username" placeholder="Enter Student Name">
+                    </div>
+                    <div>
+                        <label>Parent Name</label>
+                        <input type="text" name="parentname" id="parentname" placeholder="Enter Parent Name">
+                    </div>
+                    <div>
+                        <label>Student Age</label>
+                        <input type="number" name="sage" id="sage" placeholder="Enter student age">
+                    </div>
+                    <div>
+                        <label>Subject</label>
+                        <input type="number" name="subjectname" id="subjectname" placeholder="Enter how many subject">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="formaction">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list1" id="studentlist" style="background-color: #C2976D;">
+                    <thead>
+                        <tr>
+                            <th>fullname </th>
+                            <th>ParentName </th>
+                            <th>Age </th>
+                            <th>Subject </th>
+                            <th> Action</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>   
+        </tr>
+    </table>
+</body>
+</html>
